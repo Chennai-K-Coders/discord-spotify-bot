@@ -1,0 +1,6 @@
+/python/*
+
+.cache
+sample.json
+.env
+/__pycache__/*
