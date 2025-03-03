@@ -1,5 +1,8 @@
 import requests
+<<<<<<< HEAD
 import json
+=======
+>>>>>>> ad895028abaaf90e60e3c870419fffa5a07cc178
 import os
 import urllib.parse
 
@@ -11,8 +14,12 @@ def query_songlink_api(song_url):
 def parse_songlink_response(response):
     if response.status_code == 200:
         data = response.json()
+<<<<<<< HEAD
         linksByPlatform = [item.['url'] for item in data['linksByPlatform'].values()]
         linksByPlatform_dict = {p:l for (p,l) in zip(data['linksByPlatform'].keys(), linksByPlatform)}
         return linksByPlatform_dict
+=======
+        
+>>>>>>> ad895028abaaf90e60e3c870419fffa5a07cc178
     else:
         return None
