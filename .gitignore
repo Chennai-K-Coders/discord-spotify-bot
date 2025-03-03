@@ -2,5 +2,6 @@
 
 .cache
 sample.json
+songlink-api-response.js
 .env
 /__pycache__/*

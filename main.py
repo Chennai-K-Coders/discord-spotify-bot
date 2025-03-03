@@ -2,14 +2,9 @@ import discord
 from discord import app_commands
 from discord.ext import commands
 from typing import Literal
-
+import songlink-api
 import os
 from dotenv import load_dotenv
-
-from spotify import sp_client_scope
-
-
-
 
 load_dotenv()
 GUILD_ID = discord.Object(id=os.getenv("DISCORD_GUILD_ID"))
